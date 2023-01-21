@@ -3,11 +3,11 @@
 
 # To Do List With Tailwind 
  
-<img src="https://img.shields.io/badge/Status-Concluido-green">
+<img src="https://img.shields.io/badge/States-Conclused-green">
 
 A to-do list created with tailwindCss to learn more about this tool
 
-[Acesse aqui o site](https://ericodesenvolvedor.github.io/to-do-list-with-tailwind/)
+[preview website](https://ericodesenvolvedor.github.io/to-do-list-with-tailwind/)
 
 ### How to use?
 
