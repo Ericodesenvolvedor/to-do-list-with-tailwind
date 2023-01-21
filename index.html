@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+    <div class="max-w-[1000px] mx-auto pt-8 px-3">
+        <h1 class="text-blue-500 uppercase font-bold text-2xl mb-8">To do list</h1>
+
+        <form class="flex mb-8">
+            <label class="sr-only" for="form__input">Cadastrar tarefa</label>
+            <input 
+            class="bg-blue-100 w-full py-2 pl-1 focus:outline-blue-700 focus:ring-1" type="text" 
+            id="form__input" placeholder="Insira uma tarefa">
+            <button id="form__button" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 text-gray-800 font-bold">Salvar</button>
+        </form>
+
+        <div class="mb-8">
+            <h2 class="mb-4 font-bold text-2xl text-gray-800 title">Para fazer</h2>
+            <ul id="to-do">
+                <li class="flex bg-blue-100 justify-between py-4 px-2">
+                    <p>TAREFA</p>
+                    <div class="flex gap-3 items-center">
+                        <button class="edit"><i class="ph-pencil edit"></i></button>
+                        <button class="move"><i class="ph-caret-right move"></i></button>
+                        <button class="delete"><i class="ph-trash delete"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div>
+            <h2 class="mb-4 font-bold text-2xl text-gray-800 title">Feitas</h2>
+            <ul id="done"></ul>
+        </div>
+    </div>
+
+    <!-- fixed inset-0 h-screen w-screen z-50 bg-black opacity-50 grid place-items-center -->
+
+    <div class="hidden" id="modal">
+        <div class="bg-white p-4 rounded-lg m-auto max-w-[500px] w-full flex flex-col">
+            <button class="self-end mb-4" id="close__modal">X</button>
+
+            <form>
+                <label class="sr-only" for="form__input-edit">Editar tarefa</label>
+                <input class="bg-blue-100 py-2 pl-2 w-full placeholder:text-black focus:outline-blue-700 focus:ring-1" type="text" placeholder="Editar tarefa" id="form__input-edit"/>
+                <button class="mt-4 text-white font-bold bg-blue-700 w-full py-2" id="modal__btn-editar">Editar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
